@@ -1,0 +1,12 @@
+ID vodovoda,Zona voda,Materijal cijevi,Prečnik (mm),Koordinate tačaka loma,Kota vrha cijevi,KO,kcid
+c3de22e0-ee97-4dbb-949f-7aac1a4299b7,2,plastika,35.0,000000000.00,200.0,Vilusi,817aa8bb-bf9e-40e7-bba6-4e81e27f758d
+ID struje,Napon,Broj kablova,Koordinate tačaka loma,kota kabla,KO,kcid
+7ec9cf9f-4727-4c6a-ab3e-9df2af0929f2,220,4,"0000000.00,00000.00;00000.00,000000.00",200.0,Vilusi,817aa8bb-bf9e-40e7-bba6-4e81e27f758d
+ID toplovoda,Materijal,Precnik cijevi,Broj cijevi,Koordinate tačaka loma,Kota vrha cijevi,KO,kcid
+927c6df0-423f-48ab-918c-9417988a6ce4,bakar,350.0,1,000000.00,200.0,Vilusi,817aa8bb-bf9e-40e7-bba6-4e81e27f758d
+ID kanalizacije,Oznaka sistema,Materijal,Presjek,Koordinate tačaka loma,Kota vrha cijevi,KO,kcid
+909c6050-b40f-40ad-aec0-a6cec45fef32,opl-35,plastikaa,35.0,0000.00,200.0,Vilusi,817aa8bb-bf9e-40e7-bba6-4e81e27f758d
+ID naftagasa,Materijal,Precnik cijevi,Broj cijevi,Koordinate tačaka loma,Kota vrha cijevi,KO,kcid
+cb0e5bfe-5489-47ea-bd1e-5fd41d46852d,bakar,200.0,3,0000000.0,200.0,Vilusi,817aa8bb-bf9e-40e7-bba6-4e81e27f758d
+ID telekoma,Vrsta kabla,Broj cijevi,Koordinate tačaka loma,Kota vrha cijevi,KO,kcid
+11617a97-e753-4167-919f-5fa4a3138285,optika B,2,0.00,200.0,Vilusi,817aa8bb-bf9e-40e7-bba6-4e81e27f758d
