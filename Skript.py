@@ -240,76 +240,76 @@ while True:
 #            if upit_2 == 'DA':
 #                break
 #        break
-    if am==3:
-        while True:
-            print('-------------------------------------')
-            bz=int(input('Za brisanje vodovoda, unesite 1,\nza brisanje elektroenergetskog voda, unesite 2,\nza brisanje toplovoda ukucaj 3,\nza brisanje kanalizacionog voda ukucaj 4,\nza brisanje naftovoda ili gasovoda ukucaj 5,\nza brisanje voda telekoma ukucaj 6: '))
-            if bz==1:
-                crsr.execute('''DELETE FROM vodovod WHERE kc_id=? AND KO_naziv=?''',(rez_2,a))
-                connection.commit()
-            elif bz==2:
-                crsr.execute('''DELETE FROM struja WHERE kc_id=? AND KO_naziv=?''',(rez_2,a))
-                connection.commit()
-            elif bz==3:
-                crsr.execute('''DELETE FROM toplovod WHERE kc_id=? AND KO_naziv=?''',(rez_2,a))
-                connection.commit()
-            elif bz==4:
-                crsr.execute('''DELETE FROM kanalizacija WHERE kc_id=? AND KO_naziv=?''',(rez_2,a))
-                connection.commit()
-            elif bz==5:
-                crsr.execute('''DELETE FROM naftagas WHERE kc_id=? AND KO_naziv=?''',(rez_2,a))
-                connection.commit()
-            elif bz==6:
-                crsr.execute('''DELETE FROM telekom WHERE kc_id=? AND KO_naziv=?''',(rez_2,a))
-                connection.commit()
-
-
-            upit_3 = input('Da li želite da završite sa isplanom? ').upper()
-            while upit_3 != 'DA' and upit_3 != 'NE':
-                upit_3 = input('Unesite "da" ili "ne"!').upper()
-            if upit_3 == 'DA':
-                break
-        break
-
-#    if am == 4:
-#        with open('Ispis1.csv', mode='w', newline='',encoding="utf-8") as employee_file:
-#            employee_writer = csv.writer(employee_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-#            ca = klase.Kc.prenos_kc_id(connection, b, a)
-#            cb = klase.Vodovod.ispis_vode(connection, ca)
-#            if cb!=[]:
-#                employee_writer.writerow(['ID vodovoda', 'Zona voda', 'Materijal cijevi', 'Prečnik (mm)', 'Koordinate tačaka loma', 'Kota vrha cijevi', 'KO',
-#                 'kcid'])
-#                employee_writer.writerows(cb)
-#            cc = klase.Struja.ispis_struje(connection, ca)
-#            if cc != []:
-#                employee_writer.writerow(['ID struje', 'Napon', 'Broj kablova', 'Koordinate tačaka loma', 'kota kabla',
-#                     'KO', 'kcid'])
-#                employee_writer.writerows(cc)
-#            cd = klase.Toplovod.ispis_toplovoda(connection, ca)
-#            if cd != []:
-#                employee_writer.writerow(['ID toplovoda', 'Materijal', 'Precnik cijevi', 'Broj cijevi', 'Koordinate tačaka loma', 'Kota vrha cijevi',
-#                     'KO', 'kcid'])
-#                employee_writer.writerows(cd)
-#            ce = klase.Kanalizacija.ispis_kanalizacije(connection, ca)
-#            if ce != []:
-#                employee_writer.writerow(['ID kanalizacije', 'Oznaka sistema', 'Materijal', 'Presjek', 'Koordinate tačaka loma',
-#                     'Kota vrha cijevi', 'KO', 'kcid'])
-#                employee_writer.writerows(ce)
-#            cf = klase.Naftagas.ispis_naftagasa(connection, ca)
-#            if cf != []:
-#                employee_writer.writerow(['ID naftagasa', 'Materijal', 'Precnik cijevi', 'Broj cijevi', 'Koordinate tačaka loma',
-#                     'Kota vrha cijevi', 'KO', 'kcid'])
-#                employee_writer.writerows(cf)
-#            cg = klase.Telekom.ispis_telekoma(connection, ca)
-#            if cg != []:
-#                employee_writer.writerow(['ID telekoma', 'Vrsta kabla', 'Broj cijevi', 'Koordinate tačaka loma',
-#                     'Kota vrha cijevi', 'KO', 'kcid'])
-#                employee_writer.writerows(cg)
-#        print('Vodovi su prikazani u datoteci Ispis1.xls. Za dodatni ispis, ponovo pokrenite program!')
+#    if am==3:
+#        while True:
+#            print('-------------------------------------')
+#            bz=int(input('Za brisanje vodovoda, unesite 1,\nza brisanje elektroenergetskog voda, unesite 2,\nza brisanje toplovoda ukucaj 3,\nza brisanje kanalizacionog voda ukucaj 4,\nza brisanje naftovoda ili gasovoda ukucaj 5,\nza brisanje voda telekoma ukucaj 6: '))
+#            if bz==1:
+#                crsr.execute('''DELETE FROM vodovod WHERE kc_id=? AND KO_naziv=?''',(rez_2,a))
+#                connection.commit()
+#            elif bz==2:
+#                crsr.execute('''DELETE FROM struja WHERE kc_id=? AND KO_naziv=?''',(rez_2,a))
+#                connection.commit()
+#            elif bz==3:
+#                crsr.execute('''DELETE FROM toplovod WHERE kc_id=? AND KO_naziv=?''',(rez_2,a))
+#                connection.commit()
+#            elif bz==4:
+#                crsr.execute('''DELETE FROM kanalizacija WHERE kc_id=? AND KO_naziv=?''',(rez_2,a))
+#                connection.commit()
+#            elif bz==5:
+#                crsr.execute('''DELETE FROM naftagas WHERE kc_id=? AND KO_naziv=?''',(rez_2,a))
+#                connection.commit()
+#            elif bz==6:
+#                crsr.execute('''DELETE FROM telekom WHERE kc_id=? AND KO_naziv=?''',(rez_2,a))
+#                connection.commit()
+#
+#
+#            upit_3 = input('Da li želite da završite sa isplanom? ').upper()
+#            while upit_3 != 'DA' and upit_3 != 'NE':
+#                upit_3 = input('Unesite "da" ili "ne"!').upper()
+#            if upit_3 == 'DA':
+#                break
 #        break
-#    else:
-#        print('------------------')
-#        print('UNESITE BROJ 1-4!')
+#
+    if am == 4:
+        with open('Ispis1.csv', mode='w', newline='',encoding="utf-8") as employee_file:
+            employee_writer = csv.writer(employee_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            ca = klase.Kc.prenos_kc_id(connection, b, a)
+            cb = klase.Vodovod.ispis_vode(connection, ca)
+            if cb!=[]:
+                employee_writer.writerow(['ID vodovoda', 'Zona voda', 'Materijal cijevi', 'Prečnik (mm)', 'Koordinate tačaka loma', 'Kota vrha cijevi', 'KO',
+                 'kcid'])
+                employee_writer.writerows(cb)
+            cc = klase.Struja.ispis_struje(connection, ca)
+            if cc != []:
+                employee_writer.writerow(['ID struje', 'Napon', 'Broj kablova', 'Koordinate tačaka loma', 'kota kabla',
+                     'KO', 'kcid'])
+                employee_writer.writerows(cc)
+            cd = klase.Toplovod.ispis_toplovoda(connection, ca)
+            if cd != []:
+                employee_writer.writerow(['ID toplovoda', 'Materijal', 'Precnik cijevi', 'Broj cijevi', 'Koordinate tačaka loma', 'Kota vrha cijevi',
+                     'KO', 'kcid'])
+                employee_writer.writerows(cd)
+            ce = klase.Kanalizacija.ispis_kanalizacije(connection, ca)
+            if ce != []:
+                employee_writer.writerow(['ID kanalizacije', 'Oznaka sistema', 'Materijal', 'Presjek', 'Koordinate tačaka loma',
+                     'Kota vrha cijevi', 'KO', 'kcid'])
+                employee_writer.writerows(ce)
+            cf = klase.Naftagas.ispis_naftagasa(connection, ca)
+            if cf != []:
+                employee_writer.writerow(['ID naftagasa', 'Materijal', 'Precnik cijevi', 'Broj cijevi', 'Koordinate tačaka loma',
+                     'Kota vrha cijevi', 'KO', 'kcid'])
+                employee_writer.writerows(cf)
+            cg = klase.Telekom.ispis_telekoma(connection, ca)
+            if cg != []:
+                employee_writer.writerow(['ID telekoma', 'Vrsta kabla', 'Broj cijevi', 'Koordinate tačaka loma',
+                     'Kota vrha cijevi', 'KO', 'kcid'])
+                employee_writer.writerows(cg)
+        print('Vodovi su prikazani u datoteci Ispis1.xls. Za dodatni ispis, ponovo pokrenite program!')
+        break
+    else:
+        print('------------------')
+        print('UNESITE BROJ 1-4!')
 
 
 
